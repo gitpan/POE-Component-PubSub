@@ -1,8 +1,11 @@
-Build.PL
-ChangeLog
+Changes
+LICENSE
 MANIFEST
-META.yml # Will be created by "make dist"
+META.yml
 README
+dist.ini
 lib/POE/Component/PubSub.pm
+lib/POE/Component/PubSub/Event.pm
+lib/POE/Component/PubSub/Types.pm
 t/00-load.t
 t/01-basic.t

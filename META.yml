@@ -1,24 +1,21 @@
 ---
-name: POE-Component-PubSub
-version: 0.05
+abstract: A publish/subscribe component for the POE framework
 author:
-  - 'Nicholas R. Perez <nperez@cpan.org>'
-abstract: |-
-  A generic publish/subscribe POE::Component that 
-  enables POE::Sessions to publish events to which other POE::Sessions may 
-  subscribe.
+- Nicholas Perez <nperez@cpan.org>
+generated_by: Dist::Zilla::Plugin::MetaYaml version 1.091260
 license: gpl
-resources:
-  license: http://opensource.org/licenses/gpl-license.php
-build_requires:
-  POE: 1.003
-  Test::More: 0
+name: POE-Component-PubSub
+requires:
+  Moose: '0.79'
+  MooseX::Declare: '0.22'
+  MooseX::Types: '0.10'
+  MooseX::Types::Set::Object: '0.02'
+  MooseX::Types::Structured: '0.14'
+  POE: '1.005'
+  POE::API::Peek: '2.15'
+  POEx::Role::SessionInstantiation: '0.01'
   perl: 5.10.0
-provides:
-  POE::Component::PubSub:
-    file: lib/POE/Component/PubSub.pm
-    version: 0.05
-generated_by: Module::Build version 0.280801
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+  signatures: '0.05'
+resources:
+  repository: git://github.com/nperez/pcps.git
+version: '0.091370'
